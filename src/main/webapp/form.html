@@ -2,9 +2,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Beer Advice</title>
 </head>
 <body>
-
+	<h1>Beer Selection Page</h1>
+	<!-- Define the method to post and send the form to
+		 SelectBeer.do servelet specified in the DD -->
+	<form method="post" action="SelectBeer.do">
+		<label>Select beer characteristics</label>
+		<label for="color">Color:</label>
+		<select name="color" size="1">
+			<option value="light">Light</option>
+			<option value="amber">Amber</option>
+			<option value="brown">Brown</option>
+			<option value="dark">Dark</option>
+		</select>
+		<br><br>
+		<input type="submit">
+	</form>
 </body>
 </html>
