@@ -9,8 +9,8 @@
 </head>
 <body>
 	<%
-		List styles = (List) request.getAttribute("styles");
-		Iterator it = styles.iterator();
+		List<String> styles = (List<String>) request.getAttribute("styles");
+		Iterator<String> it = styles.iterator();
 		while(it.hasNext()){
 			out.print("<br>Try: " + it.next());
 		}
